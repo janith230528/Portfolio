@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janith Chamodya - Portfolio</title>
+	<link rel="icon" type="image/x-icon" href="assets/icon.png">
+	<link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#blogs">Blogs</a></li>
+            <li><a href="#activities">Other</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <img src="assets/profile.jpg" alt="Janith Chamodya" class="profile-img">
+        <div class="hero-content">
+            <h1>Hello, I'm Janith Chamodya</h1>
+	        <p class="subtitle">Software Engineering Student & Graphic Designer</p>
+            <p class="university">Sabaragamuwa University of Sri Lanka</p>
+            <a href="#portfolio" class="cta-button">Explore My Journey</a>
+        </div>
+        <!-- Floating particles -->
+        <div class="particle" style="top: 20%; left: 10%; animation-delay: 0s;"></div>
+        <div class="particle" style="top: 60%; left: 80%; animation-delay: 2s;"></div>
+        <div class="particle" style="top: 30%; left: 70%; animation-delay: 4s;"></div>
+        <div class="particle" style="top: 80%; left: 20%; animation-delay: 1s;"></div>
+        <div class="particle" style="top: 10%; left: 90%; animation-delay: 3s;"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="fade-in">About Me</h2>
+            <div class="about-content fade-in">
+                <img src="assets/profile.jpg" alt="Janith Chamodya" class="profile-img">
+                <div>
+                    <p>Hello! I'm Janith Chamodya, a passionate Software Engineering undergraduate at Sabaragamuwa University of Sri Lanka. Currently in my second year, I'm building a strong foundation in programming while pursuing my creative passion for graphic design.</p>
+                    <p>I'm currently learning <strong>Java</strong>, <strong>Python</strong>, and <strong>Web Development</strong>, with growing interests in <strong>Artificial Intelligence</strong>, <strong>Databases</strong>, and <strong>System Design</strong>. When I'm not coding, you'll find me creating visual designs or playing musical instruments like violin and keyboard.</p>
+                    <p>I believe in the power of combining technical skills with creativity to build meaningful solutions. I'm excited to explore open-source contributions and collaborate with the developer community.</p>
+                </div>
+            </div>
+            <div class="skills fade-in">
+                <div class="skill-card">
+                    <h3>Programming Languages</h3>
+                    <p><strong>Learning:</strong> C, Java, Python<br>
+                    <strong>Exploring:</strong> JavaScript, Machine Learning</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Web Development</h3>
+                    <p><strong>Frontend:</strong> HTML, CSS, Javascript<br>
+                    <strong>Learning:</strong> React<br>
+                    <strong>Database:</strong> MySQL</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Design & Tools</h3>
+                    <p><strong>Design:</strong> Adobe Illustrator, Photoshop<br>
+                    <strong>Development:</strong> VS Code, IntelliJ IDEA<br>
+                    <strong>Version Control:</strong> Git, GitHub</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Creative Skills</h3>
+                    <p><strong>Graphic Design:</strong> Logos, Web Design, Illustrations<br>
+                    <strong>Music:</strong> Violin, Keyboard<br>
+                    <strong>Brand:</strong> J art graphics</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section portfolio">
+        <div class="container">
+            <h2 class="fade-in">My Work</h2>
+            <div class="portfolio-grid fade-in">
+                <div class="project-card" onclick="showProject('Java Calculator')">
+                    <div class="project-img">🧮</div>
+                    <div class="project-info">
+                        <h3>Java Calculator</h3>
+                        <p>A simple calculator application built using Java - my first programming project</p>
+                    </div>
+                </div>
+                <div class="project-card" onclick="showProject('J art graphics Logo')">
+                    <div class="project-img">🎨</div>
+                    <div class="project-info">
+                        <h3>J art graphics Logo</h3>
+                        <p>Personal branding project - designed logo for my graphic design work</p>
+                    </div>
+                </div>
+                <div class="project-card coming-soon">
+                    <div class="project-img">🚀</div>
+                    <div class="project-info">
+                        <h3>Upcoming Projects</h3>
+                        <p>More exciting projects coming soon as I continue my learning journey!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blogs Section -->
+    <section id="blogs" class="section blogs">
+        <div class="container">
+            <h2 class="fade-in">My Blog</h2>
+            <p class="fade-in" style="margin-bottom: 2rem; font-size: 1.2rem; opacity: 0.8;">Sharing my learning journey and insights</p>
+            <div class="blog-grid fade-in">
+                <article class="blog-card" onclick="openBlog('programming-journey')">
+                    <div class="blog-image">📚</div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Learning</span>
+                            <span>Coming Soon</span>
+                        </div>
+                        <h3 class="blog-title">My Programming Learning Journey</h3>
+                        <p class="blog-excerpt">Documenting my experiences as a Software Engineering student, challenges faced, and lessons learned along the way.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" onclick="openBlog('design-tips')">
+                    <div class="blog-image">🎨</div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Design</span>
+                            <span>Coming Soon</span>
+                        </div>
+                        <h3 class="blog-title">Graphic Design Tips for Developers</h3>
+                        <p class="blog-excerpt">Combining programming and design skills - tips and tricks I've learned while building J art graphics.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" onclick="openBlog('tech-trends')">
+                    <div class="blog-image">🌐</div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Technology</span>
+                            <span>Coming Soon</span>
+                        </div>
+                        <h3 class="blog-title">Emerging Technology Trends</h3>
+                        <p class="blog-excerpt">Exploring the latest trends in AI, web development, and software engineering from a student's perspective.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" onclick="openBlog('university-life')">
+                    <div class="blog-image">🎓</div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">University</span>
+                            <span>Coming Soon</span>
+                        </div>
+                        <h3 class="blog-title">Life as a Software Engineering Student</h3>
+                        <p class="blog-excerpt">Sharing insights about university life, coursework, and balancing academics with personal projects.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Extra-curricular Activities Section -->
+    <section id="activities" class="section activities">
+        <div class="container">
+            <h2 class="fade-in">Activities & Interests</h2>
+            <p class="fade-in" style="margin-bottom: 2rem; font-size: 1.2rem; opacity: 0.8;">Beyond academics - my passions and future goals</p>
+            <div class="activities-grid fade-in">
+                <div class="activity-card">
+                    <span class="activity-icon">🎵</span>
+                    <h3 class="activity-title">Musical Talents</h3>
+                    <p class="activity-description">Passionate musician skilled in playing violin and keyboard, bringing creativity and rhythm to life.</p>
+                </div>
+
+                <div class="activity-card">
+                    <span class="activity-icon">🎨</span>
+                    <h3 class="activity-title">J art graphics</h3>
+                    <p class="activity-description">Personal graphic design brand specializing in logos, web design, illustrations, and social media posts.</p>
+                </div>
+
+                <div class="activity-card">
+                    <span class="activity-icon">🌱</span>
+                    <h3 class="activity-title">Open Source Aspirations</h3>
+                    <p class="activity-description">Excited to contribute to open-source projects and collaborate with the global developer community.</p>
+                </div>
+
+                <div class="activity-card">
+                    <span class="activity-icon">🤖</span>
+                    <h3 class="activity-title">AI & ML Exploration</h3>
+                    <p class="activity-description">Currently exploring machine learning concepts and looking forward to building AI-powered applications.</p>
+                </div>
+
+                <div class="activity-card">
+                    <span class="activity-icon">🎯</span>
+                    <h3 class="activity-title">Future Goals</h3>
+                    <p class="activity-description">Planning to join university clubs, participate in hackathons, and take on leadership roles in tech communities.</p>
+                </div>
+
+                <div class="activity-card">
+                    <span class="activity-icon">💡</span>
+                    <h3 class="activity-title">Creative Problem Solving</h3>
+                    <p class="activity-description">Combining technical skills with creative thinking to develop innovative solutions and meaningful projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="fade-in">Get In Touch</h2>
+            <p class="fade-in" style="margin-bottom: 2rem; font-size: 1.2rem; opacity: 0.9;">Let's connect and collaborate!</p>
+            
+            <div class="contact-links fade-in">
+                <a href="mailto:lakshanwarapitiya528@gmail.com" class="contact-link">
+                    <span>📧</span>lakshanwarapitiya528@gmail.com
+                </a>
+                <a href="https://www.linkedin.com/in/janith-chamodya-850b792a7/" class="contact-link">
+                    <span>💼</span> LinkedIn Profile
+                </a>
+                <a href="https://github.com/janith230528" class="contact-link">
+                    <span>💻</span> GitHub Profile
+                </a>
+            </div>
+
+            <form class="contact-form fade-in" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
