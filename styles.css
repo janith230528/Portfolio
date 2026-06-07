@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Gemunu+Libre:wght@200..800&family=Noto+Sans+Sinhala:wght@100..900&family=Poppins:wght@300;400;500;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    color: lightgray;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    background-color: #001f7c38;
+}
+
+.back-vid{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    mix-blend-mode:overlay;
+}
