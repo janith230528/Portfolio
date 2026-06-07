@@ -34,7 +34,7 @@ html{
 
 header{
     display: flex;
-    position: absolute;
+    position: sticky;
     top: 0;
     right: 0;
     left: 0;
@@ -51,7 +51,7 @@ header{
 .left{
     display: flex;
     align-items: center;
-    border: 1px solid #72a1de;
+    /* border: 1px solid #72a1de; */
     gap: 15px;
 }
 
@@ -89,7 +89,7 @@ header ul a:hover{
 .box-icons{
     display: flex;
     gap: 40px;
-    border: 1px solid #72a1de;
+    /* border: 1px solid #72a1de; */
 }
 
 .box-icons p{
@@ -115,4 +115,27 @@ header ul a:hover{
     font-size: 35px;
     cursor: pointer;
     display: none;
+}
+
+@media screen and (max-width: 768px){
+     header {
+        height: 50px;
+    }
+
+    header ul{
+        display: none;
+    }
+
+    header .box-icons{
+        display: none;
+    }
+
+    .menu-icon{
+        display: flex;
+    }
+
+}
+
+@media screen and (max-width: 1200px){
+
 }
