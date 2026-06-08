@@ -84,13 +84,13 @@ header ul a{
 }
 
 header ul a:hover{
-    text-shadow: 0 0 15px black;
+    animation: rgbtxetGlow 3s infinite;
 }
 
 .box-icons{
     display: flex;
     margin-right: 30px;
-    border:1px solid red;
+    /* border:1px solid red; */
     gap: 40px;
 }
 
@@ -110,7 +110,7 @@ header ul a:hover{
 .box-icons p:hover{
     background-color: #72a1de;
     color: black;
-    box-shadow: 0 0 15px #72a1de;
+    animation: rgbGlow 3s infinite;
 }
 
 .blackhole-box{
@@ -135,7 +135,7 @@ header ul a:hover{
     height: 100vh;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid greenyellow;
+    /* border: 1px solid greenyellow; */
 }
 
 .hero-info{
@@ -263,8 +263,8 @@ header ul a:hover{
 }
 
 .photo{
-    border: 1px solid #72a1de81;
-    box-shadow: 0 0 50px #72a1de81;
+    border: 5px solid #72a1de81;
+    box-shadow: 0 0 100px #72a1de81;
     height: 100%;
     border-radius: 100%;
     mix-blend-mode:darken;
@@ -276,13 +276,17 @@ header ul a:hover{
     width: 30px;
     border: 2px solid lightgray;
     position: absolute;
-    left: 49%;
-    bottom: 8%;
+    left: 50%;
+    bottom: 12%;
     border-radius: 50px;
     cursor: pointer;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.626);
+    animation: rgbGlow 3s infinite;
   }
+
+  
   .scroll-down::before,
+  
   .scroll-down::after {
     content: "";
     position: absolute;
